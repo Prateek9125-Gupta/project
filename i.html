@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HODLINFO</title>
+  <link rel="stylesheet" href="Express.js">
+  <style>
+    body {
+      background-color: #181818;
+      color: #fff;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .price {
+      font-size: 48px;
+      font-weight: bold;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat-value {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .table-header {
+      background-color: #282828;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    .table-row {
+      background-color: #333;
+      padding: 10px;
+    }
+
+    .table-cell {
+      padding: 10px;
+    }
+
+    .platform {
+      display: flex;
+      align-items: center;
+    }
+
+    .platform-icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+
+    .button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">HODLINFO</div>
+    <div>
+      <button class="button">INR-</button>
+      <button class="button">BTC-</button>
+      <button class="button">BUY BTC</button>
+      <div style="display: flex; align-items: center;">
+        <div style="width: 30px; height: 30px; background-color: #4CAF50; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-right: 10px;">
+          <p style="font-size: 14px; color: #fff;">57</p>
+        </div>
+        <button class="button">Connect Telegram</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="price">₹ 26,56,110</div>
+  </div>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-value">0.1%</div>
+      <div>5 Mins</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">0.96%</div>
+      <div>1 Hour</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">2.73%</div>
+      <div>1 Day</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">7.51%</div>
+      <div>7 Days</div>
+    </div>
+  </div>
+
+  <div>
+    <p style="color: #fff; font-size: 14px; margin: 20px 0 0 20px;">Average BTC/INR net price including commission</p>
+  </div>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th class="table-header">#</th>
+        <th class="table-header">Platform</th>
+        <th class="table-header">Last Traded Price</th>
+        <th class="table-header">Buy / Sell Price</th>
+        <th class="table-header">Difference</th>
+        <th class="table-header">Savings</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="table-cell">1</td>
+        <td class="table-cell platform">
+          <img class="platform-icon" src="https://i.ibb.co/30jG5jM/wazirx-icon.png" alt="WazirX icon">
+          WazirX
+        </td>
+        <td class="table-cell">₹ 25,72,612</td>
+        <td class="table-cell">₹ 25,72,610 / ₹ 25,72,612</td>
+        <td class="table-cell">-3.14%</td>
+        <td class="table-cell">₹ 83,498</td>
+      </tr>
+      <tr>
+        <td class="table-cell">2</td>
+        <td class="table-cell platform">
+          <img class="platform-icon" src="https://i.ibb.co/6b26kC4/bitbns-icon.png" alt="Bitbns icon">
+          Bitbns
+        </td>
+        <td class="table-cell">₹ 28,83,906</td>
+        <td class="table-cell">₹ 28,55,164 / ₹ 28,82,157</td>
+        <td class="table-cell">8.58%</td>
+        <td class="table-cell">₹ 2,27,796</td>
+      </tr>
+      <tr>
+        <td class="table-cell">3</td>
+        <td class="table-cell platform">
+          <img class="platform-icon" src="https://i.ibb.co/x1vF7K2/colodax-icon.png" alt="Colodax icon">
+          Colodax
+        </td>
+        <td class="table-cell">₹ 25,46,035</td>
+        <td class="table-cell">₹ 25,33,304 / ₹ 28,51,559</td>
+        <td class="table-cell">-4.14%</td>
+        <td class="table-cell">₹ 1,10,074</td>
+      </tr>
+      <tr>
+        <td class="table-cell">4</td>
+        <td class="table-cell platform">
+          <img class="platform-icon" src="https://i.ibb.co/yRNwG1F/zebpay-icon.png" alt="Zebpay icon">
+          Zebpay
+        </td>
+        <td class="table-cell">₹ 26,50,000</td>
+        <td class="table-cell">₹ 26,49,999 / ₹ 26,21,000</td>
+        <td class="table-cell">-0.23%</td>
+        <td class="table-cell">₹ 6,110</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button class="button" style="margin-left: 20px;">Add hodlinfo to home screen</button>
+
+  <script>
+    // You can add your backend logic here using Node.js to fetch data and dynamically update the HTML elements
+  </script>
+</body>
+</html>
